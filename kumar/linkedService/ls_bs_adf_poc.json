@@ -1,0 +1,17 @@
+{
+	"name": "ls_bs_adf_poc",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_kv_adf_poc",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sec-adf-connectionstring"
+			}
+		}
+	}
+}
