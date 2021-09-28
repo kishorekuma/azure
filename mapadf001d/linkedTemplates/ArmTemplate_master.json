@@ -7,13 +7,9 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "mapadf001d"
 		},
-		"ls_keyvault_properties_typeProperties_baseUrl": {
-			"type": "string",
-			"defaultValue": "https://adfkvt.vault.azure.net/"
-		},
-		"ls_storage_properties_typeProperties_connectionString_secretName": {
-			"type": "string",
-			"defaultValue": "adfconnectionstring"
+		"ls_storage_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_storage'"
 		},
 		"containerUri": {
 			"type": "string",
@@ -42,11 +38,8 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"ls_keyvault_properties_typeProperties_baseUrl": {
-						"value": "[parameters('ls_keyvault_properties_typeProperties_baseUrl')]"
-					},
-					"ls_storage_properties_typeProperties_connectionString_secretName": {
-						"value": "[parameters('ls_storage_properties_typeProperties_connectionString_secretName')]"
+					"ls_storage_connectionString": {
+						"value": "[parameters('ls_storage_connectionString')]"
 					}
 				}
 			},
