@@ -5,7 +5,7 @@
 		"factoryName": {
 			"value": "mapadf001d"
 		},
-		"ls_storage_connectionString": {
+		"ls_adf_connectionString": {
 			"value": ""
 		}
 	}
