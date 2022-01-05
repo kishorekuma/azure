@@ -11,6 +11,18 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ls_store'"
 		},
+		"trigger4_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/8248eef1-55df-4aab-8cc4-d3cfe2616a62/resourceGroups/DevRG/providers/Microsoft.Storage/storageAccounts/triggersstorage123"
+		},
+		"trigger5_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/8248eef1-55df-4aab-8cc4-d3cfe2616a62/resourceGroups/DevRG/providers/Microsoft.Storage/storageAccounts/triggersstorage123"
+		},
+		"trigger6_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/8248eef1-55df-4aab-8cc4-d3cfe2616a62/resourceGroups/DevRG/providers/Microsoft.Storage/storageAccounts/triggersstorage123"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -40,6 +52,15 @@
 					},
 					"ls_store_connectionString": {
 						"value": "[parameters('ls_store_connectionString')]"
+					},
+					"trigger4_properties_typeProperties_scope": {
+						"value": "[parameters('trigger4_properties_typeProperties_scope')]"
+					},
+					"trigger5_properties_typeProperties_scope": {
+						"value": "[parameters('trigger5_properties_typeProperties_scope')]"
+					},
+					"trigger6_properties_typeProperties_scope": {
+						"value": "[parameters('trigger6_properties_typeProperties_scope')]"
 					}
 				}
 			},

@@ -7,6 +7,15 @@
 		},
 		"ls_store_connectionString": {
 			"value": ""
+		},
+		"trigger4_properties_typeProperties_scope": {
+			"value": "/subscriptions/8248eef1-55df-4aab-8cc4-d3cfe2616a62/resourceGroups/DevRG/providers/Microsoft.Storage/storageAccounts/triggersstorage123"
+		},
+		"trigger5_properties_typeProperties_scope": {
+			"value": "/subscriptions/8248eef1-55df-4aab-8cc4-d3cfe2616a62/resourceGroups/DevRG/providers/Microsoft.Storage/storageAccounts/triggersstorage123"
+		},
+		"trigger6_properties_typeProperties_scope": {
+			"value": "/subscriptions/8248eef1-55df-4aab-8cc4-d3cfe2616a62/resourceGroups/DevRG/providers/Microsoft.Storage/storageAccounts/triggersstorage123"
 		}
 	}
 }
