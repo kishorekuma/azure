@@ -1,0 +1,25 @@
+{
+	"name": "trigger3",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_copy",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/input/blobs/fgh",
+			"blobPathEndsWith": ".csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/8248eef1-55df-4aab-8cc4-d3cfe2616a62/resourceGroups/DevRG/providers/Microsoft.Storage/storageAccounts/triggersstorage123",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
