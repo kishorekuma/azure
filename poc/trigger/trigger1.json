@@ -1,0 +1,18 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/input/blobs/abc",
+			"blobPathEndsWith": ".tsv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/8248eef1-55df-4aab-8cc4-d3cfe2616a62/resourceGroups/DevRG/providers/Microsoft.Storage/storageAccounts/triggersstorage123",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
